@@ -30,6 +30,7 @@ def main():
                     print(i);
                 return
     #如果文件不存在就写进去
+    print(f"写入文件{write_files} 大小:{len(txt_buff)}")
     client.write(write_files, data=txt_buff, encoding='utf-8')
 
 def filter(files_name,conditions):
